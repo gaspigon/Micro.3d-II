@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url('img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+h1{
+    font-size: 60px;
+    color: rgb(3, 19, 53);
+    margin: 4% 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    background-color: rgba(171, 184, 224, 0.788);
+    width: 30rem;
+    border-radius: 20px;
+    
+    
+    
+    
+    
+}
+
+.boton{
+    position: relative;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+    
+}
+
+.link-footer{
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 2rem;
+    color: rgba(92, 91, 91, 0.753);
+}
+
+
+.link{
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    transform: scale(1.1);
+}
