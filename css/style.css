@@ -9,27 +9,19 @@ body {
   overflow-x: hidden;
 }
 
-/*HEADER*/
-/*Variables*/
-/*colores fuente*/
-/*font family*/
-/* color links hover*/
+
+
+*/
 .header-container {
   margin: 0;
   padding: 0;
 }
 .header-container .nav-link {
-  font-size: x-large;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-}
-.header-container .nav-link:hover {
-  transform: scale(1.1);
-  color: tomato;
+  font-size: 1.5rem;
 }
 
-/*seccion imagen en el header*/
+
 .box-imagen {
   background-image: url("../img/fondo.png");
   background-repeat: no-repeat;
@@ -53,6 +45,9 @@ body {
 }
 .box-imagen .link-whats:hover {
   transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -moz-transform: scale(1.6);
 }
 .box-imagen .img-icono1 {
   width: 15rem;
@@ -64,12 +59,7 @@ body {
   }
 }
 .box-imagen h1 {
-  display: flex;
-  justify-content: center;
   font-size: 10rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
 }
 @media screen and (max-width: 600px) {
   .box-imagen h1 {
@@ -77,12 +67,7 @@ body {
   }
 }
 .box-imagen .parrafo {
-  display: flex;
-  justify-content: center;
   font-size: 3rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
 }
 @media screen and (max-width: 600px) {
   .box-imagen .parrafo {
@@ -94,8 +79,6 @@ body {
   animation-iteration-count: infinite;
   margin-top: 6%;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 @media screen and (max-width: 600px) {
   .box-imagen .caja-scroll {
@@ -115,18 +98,33 @@ body {
 @keyframes caja-parrafo {
   0% {
     transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -moz-transform: translateY(10px);
   }
   25% {
     transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    -moz-transform: translateY(20px);
   }
   50% {
     transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    -moz-transform: translateY(30px);
   }
   75% {
     transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    -moz-transform: translateY(40px);
   }
   100% {
     transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -moz-transform: translateY(50px);
   }
 }
 
@@ -167,6 +165,7 @@ body {
   }
 }
 /*SECCION GALERIA IMAGENES*/
+
 .galeria-imagenes {
   display: grid;
   margin: 1%;
@@ -185,6 +184,9 @@ body {
 }
 .galeria-imagenes .box:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
 }
 .galeria-imagenes .grid-uno, .galeria-imagenes .grid-cinco {
   grid-row-start: span 2;
@@ -200,6 +202,7 @@ body {
 }
 
 /*SECCION PRODUCTOS*/
+
 .productos .box-producto {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.55);
   padding-bottom: 1rem;
@@ -211,8 +214,6 @@ body {
   object-fit: cover;
 }
 .productos .box-producto .texto {
-  display: flex;
-  justify-content: center;
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -222,19 +223,16 @@ body {
   color: navy;
   display: flex;
   justify-content: space-around;
-  font: "Roboto", sans-serif;
   font-size: 1.6rem;
   text-decoration: none;
   margin-top: 1.2rem;
-}
-.productos .box-producto .link-producto:hover {
-  color: tomato;
 }
 
 /*Variables*/
 /*colores fuente*/
 /*font family*/
 /* color links hover*/
+/*font weigth*/
 /*Footer*/
 #Nosotros {
   margin-top: 5rem;
@@ -244,9 +242,6 @@ body {
   margin: 0.5rem;
   font-size: 2.2rem;
   color: rgba(92, 91, 91, 0.753);
-}
-#Nosotros .link-footer:hover {
-  color: #2d5664;
 }
 #Nosotros .link-footer .text-muted {
   display: none;
@@ -280,6 +275,9 @@ body {
   color: rgba(92, 91, 91, 0.753);
   text-decoration: none;
   list-style: none;
+}
+#Nosotros .box-navegar .lista-navegar .link-navegar:hover {
+  color: tomato;
 }
 #Nosotros .img-footer {
   width: 15rem;
@@ -315,5 +313,90 @@ body {
   height: 25rem;
   object-fit: cover;
 }
+
+/*Placeholders*/
+.box-imagen h1, .box-imagen .parrafo {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.box-imagen h1, .box-imagen .parrafo, .box-imagen .caja-scroll, .productos .box-producto .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .nav-link, .productos .box-producto .link-producto, #Nosotros .link-footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+.header-container .nav-link:hover, .productos .box-producto .link-producto:hover, #Nosotros .link-footer:hover {
+  transform: scale(1.1);
+  color: tomato;
+}
+
+/*mixins es como el extends pero sin el valor definido, nos permite agregar un parametro vacio que le definis al usar*/
+/*
+@mixin prefijos($valor) {
+    transform: $valor;
+
+    -webkit-transform: $valor;
+    -o-transform: $valor;
+    -moz-transform: $valor;
+
+}
+
+.animaciones{ 
+    @include botones(translate(50%));
+}
+
+.animaciones-dos{
+    @include botones(scale(4)); 
+}
+
+@mixin botones($relleno, $redondeado, $border){
+    padding: $relleno;
+    border ; $border;
+    border-radius: $redondeado;
+}
+
+.botones-comprar {
+    @include botones(40px,6px ,1px solid black );
+
+}
+
+.boton-stock {
+    @include botones(20px,4px , 4px dotted gray );
+}
+
+*/
+/*mapas*/
+/*
+$standard: (
+    /*key -- valor
+    text-color-standard : #ccc,
+    bg-color-standard : #B2D6F9,
+
+    font-standard: 40px;
+
+    transition: all 4s ease,
+);
+
+$premium: (
+    text-color-premium: #ccc,
+    bg-color-premium: #B2D6F9,
+
+
+    font-standard: 40px,
+
+    transition: all 4s ease;
+);
+
+.standard{
+    background-color: map-get($standard, bg-color-standard );
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */

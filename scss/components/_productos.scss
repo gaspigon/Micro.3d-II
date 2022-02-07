@@ -1,5 +1,5 @@
 /*SECCION PRODUCTOS*/
-
+@import '../base/mapas';
 
 .productos{
 
@@ -15,24 +15,20 @@
             }
 
             .texto{
-                display: flex;
-                justify-content: center;
+                @extend %flex;
                 margin-top: 1rem;
                 font-family: $font-fam;
-                font-weight: bolder;
-                font-size: 1.5rem;            }
+                font-weight: $font-wei;
+                @include fontsize(1.5rem);            }
 
             .link-producto{
                 color: navy;
                 display: flex;
-                justify-content: space-around;
-                font: $font-fam;
+                justify-content: map-get($estilo-link, justify-link );
                 font-size: 1.6rem;
-                text-decoration: none;
+                text-decoration: map-get($estilo-link, text-link-decoration);
                 margin-top: 1.2rem;
-                &:hover{
-                    color: $color-hov;
-                }
+                @extend %links;
             }
 
     }

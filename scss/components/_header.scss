@@ -1,25 +1,22 @@
 /*HEADER*/
 
 @import '../base/variables';
+@import '../base/mixins';
 
 .header-container{
     margin: 0;
     padding: 0;
 
         .nav-link{
-                font-size: x-large;
-                color: $font-color;
-                font-family: $font-fam;
-                font-weight: bolder;
-                &:hover{
-                    transform: scale(1.1);
-                    color: $color-hov;
+            @extend %links;
+            color: $font-color;
+            @include fontsize(1.5rem);
                 }
         }
         
 
    
- }
+ 
 
          
 

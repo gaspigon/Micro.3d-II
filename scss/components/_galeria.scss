@@ -1,4 +1,5 @@
 /*SECCION GALERIA IMAGENES*/
+@import '../base/mixins';
 
 .galeria-imagenes{
     display: grid;
@@ -16,7 +17,7 @@
         .box{
             transition: all 300ms;
             &:hover{
-            transform: scale(1.05);
+            @include prefijos(scale(1.05));
             }
         }
             .grid-uno, .grid-cinco{

@@ -8,9 +8,7 @@
         margin: 0.5rem;
         font-size: 2.2rem;
         color: rgba(92, 91, 91, 0.753);
-        &:hover{
-            color: rgb(45, 86, 100);
-        }
+        @extend %links;
 
             .text-muted{
                 display: none;
@@ -48,6 +46,9 @@
             color: rgba(92, 91, 91, 0.753);
             text-decoration: none;
             list-style: none;
+            &:hover{
+                color: $color-hov;
+            }
            
             
         }

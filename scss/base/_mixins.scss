@@ -1,0 +1,50 @@
+/*mixins es como el extends pero sin el valor definido, nos permite agregar un parametro vacio que le definis al usar*/
+
+/*
+@mixin prefijos($valor) {
+    transform: $valor;
+
+    -webkit-transform: $valor;
+    -o-transform: $valor;
+    -moz-transform: $valor;
+    
+}
+
+.animaciones{ 
+    @include botones(translate(50%));
+}
+
+.animaciones-dos{
+    @include botones(scale(4)); 
+}
+
+@mixin botones($relleno, $redondeado, $border){
+    padding: $relleno;
+    border ; $border;
+    border-radius: $redondeado;
+}
+
+.botones-comprar {
+    @include botones(40px,6px ,1px solid black );
+
+}
+
+.boton-stock {
+    @include botones(20px,4px , 4px dotted gray );
+}
+
+*/
+@mixin prefijos($valor) {
+    transform: $valor;
+
+    -webkit-transform: $valor;
+    -o-transform: $valor;
+    -moz-transform: $valor;
+    
+}
+
+@mixin fontsize($tamaño) {
+    font-size: $tamaño;
+
+    
+}

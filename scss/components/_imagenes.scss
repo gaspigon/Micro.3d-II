@@ -1,5 +1,7 @@
 /*seccion imagen en el header*/
 
+/*import mixins*/
+@import '../base/mixins';
 
 
 .box-imagen{
@@ -22,7 +24,7 @@
             height: 5rem;
             transition: all 0.4s;
             &:hover{
-                transform: scale(1.6);
+                @include prefijos(scale(1.6));
             }
         }
       .img-icono1{
@@ -35,60 +37,53 @@
       }
 
         h1{
-            display: flex;
-            justify-content: center;
-            font-size: 10rem;
-            color: $font-color;
-            font-family: $font-fam;
-            font-weight: bolder;
+            @extend %flex;
+            @include fontsize(10rem);
+            @extend %estilo_letra;
             @media screen and(max-width:600px) {
-                font-size: 3rem;
+            @include fontsize(3rem);
                 
             }
         }
          .parrafo{
-            display: flex;
-            justify-content: center;
-            font-size: 3rem;
-            color: $font-color;
-            font-family: $font-fam;
-            font-weight: bolder;
+            @extend %flex;
+            @include fontsize(3rem);
+            @extend %estilo_letra;
             @media screen and(max-width: 600px) {
-                font-size: 1rem;
+                @include fontsize(1rem);
                 
             }
          }
 
         .caja-scroll{
+            @extend %flex;
             animation: caja-parrafo 0.6s;
             animation-iteration-count: infinite;
             margin-top: 6%;
             width: 100%;
-            display: flex;
-            justify-content: center;
             @media screen and (max-width:600px) {
                 display: none;
                 
             }
 
                 .caja-parrafo{
-                    font-size: 80px;
+                    @include fontsize(80px);
                     color: $font-color;
                     @media screen and(max-width:600px) {
-                        font-size: 80px;
+                        @include fontsize(80px);
                         color: $font-color;
                         
                     }
                     @keyframes caja-parrafo {
-                        0%{ transform: translateY(10px);}
+                        0%{ @include prefijos(translateY(10px));}
                     
-                        25%{transform: translateY(20px);}
+                        25%{@include prefijos(translateY(20px));}
                     
-                        50%{transform: translateY(30px);}
+                        50%{@include prefijos(translateY(30px));}
                     
-                        75%{transform: translateY(40px);}
+                        75%{@include prefijos(translateY(40px));}
                     
-                        100%{transform: translateY(50px);}
+                        100%{@include prefijos(translateY(50px));}
                     }
                 }
         }
@@ -100,14 +95,14 @@
     border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
     font-family: $font-fam; 
-    font-size: 44px;
+    @include fontsize(44px);
     /*WHITE-SPACE COMO SE MANEJA EL ESPACIO EN BLANCO DENTRO DE UN ELEMENTO*/
     white-space: nowrap;
     /*OVERFLOW lo que haya fuera del contenedor no se vea ni se genere un scroll*/
     overflow: hidden;
     /*media query*/
     @media screen and(max-width:600px) {
-        font-size: 15px;
+        @include fontsize(15px);
         font-weight: bolder;
         width: 7em;
         

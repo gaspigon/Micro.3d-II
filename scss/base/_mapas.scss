@@ -1,0 +1,35 @@
+/*mapas*/
+
+/*
+$standard: (
+    /*key -- valor
+    text-color-standard : #ccc,
+    bg-color-standard : #B2D6F9,
+
+    font-standard: 40px;
+
+    transition: all 4s ease,
+);
+
+$premium: (
+    text-color-premium: #ccc,
+    bg-color-premium: #B2D6F9,
+
+
+    font-standard: 40px,
+
+    transition: all 4s ease;
+);
+
+.standard{
+    background-color: map-get($standard, bg-color-standard );
+}
+
+*/
+
+$estilo-link: (
+    justify-link : space-around,
+    text-link-decoration : none,
+
+);
+

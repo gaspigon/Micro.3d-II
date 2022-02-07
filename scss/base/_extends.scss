@@ -1,0 +1,31 @@
+
+
+/*Placeholders*/
+
+
+
+
+%estilo_letra{
+    font-family: $font-fam;
+    color: $font-color;
+    font-weight: $font-wei;
+}
+
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+%links {
+    font-family:$font-fam ;
+    font-weight: $font-wei;
+    &:hover{
+        transform: scale(1.1);
+        color: $color-hov;
+    }
+}
