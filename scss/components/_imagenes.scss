@@ -56,24 +56,23 @@
          }
 
         .caja-scroll{
-            @extend %flex;
+            display: flex;
+            justify-content: center;
             animation: caja-parrafo 0.6s;
             animation-iteration-count: infinite;
             margin-top: 6%;
             width: 100%;
-            @media screen and (max-width:600px) {
+            @media screen and(max-width:600px) {
                 display: none;
+                
             }
-        }
 
                 .caja-parrafo{
                     @include fontsize(80px);
                     color: $font-color;
-                    @media screen and(max-width:600px) {
-                        @include fontsize(80px);
-                        color: $font-color;
-                        
-                    }
+
+                }
+
                     @keyframes caja-parrafo {
                         0%{ @include prefijos(translateY(10px));}
                     
