@@ -41,7 +41,7 @@
             @include fontsize(10rem);
             @extend %estilo_letra;
             @media screen and(max-width:600px) {
-            @include fontsize(3rem);
+                 @include fontsize(3rem);
                 
             }
         }
@@ -63,8 +63,8 @@
             width: 100%;
             @media screen and (max-width:600px) {
                 display: none;
-                
             }
+        }
 
                 .caja-parrafo{
                     @include fontsize(80px);
@@ -87,7 +87,7 @@
                     }
                 }
         }
-}
+
         
 .linea-uno{
     width: 24em;
