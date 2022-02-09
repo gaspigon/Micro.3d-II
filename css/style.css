@@ -199,9 +199,9 @@ body {
 }
 
 .linea-uno {
-  width: 24em;
+  width: 10em;
   margin: 3% auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 1px solid whitesmoke;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 44px;
@@ -227,10 +227,10 @@ body {
 @keyframes maquina {
   from {
     width: 0;
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: whitesmoke;
   }
   to {
-    width: 24em;
+    width: 10em;
     border-right-color: transparent;
   }
 }

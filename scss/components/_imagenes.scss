@@ -89,9 +89,9 @@
 
         
 .linea-uno{
-    width: 24em;
+    width: 10em;
     margin: 3% auto;
-    border-right: 2px solid rgb(245, 245, 245);
+    border-right: 1px solid rgb(245, 245, 245);
     text-align: center;
     font-family: $font-fam; 
     @include fontsize(44px);
@@ -119,7 +119,7 @@
         border-right-color: rgb(245, 245, 245);
     }
     to{
-        width: 24em;
+        width: 10em;
         border-right-color:transparent ;
     }
 }

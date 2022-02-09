@@ -51,6 +51,7 @@ h1{
     background-color: rgba(171, 184, 224, 0.788);
     width: 30rem;
     border-radius: 20px;
+    padding-bottom: 1px;
 }
 @media screen and (max-width:600px) {
     .container{
@@ -60,9 +61,13 @@ h1{
 }
 
 .boton{
-    position: relative;
-    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
+    
+}
+@media screen and (max-width:600px) {
+
     
 }
 
