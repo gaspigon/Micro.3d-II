@@ -9,29 +9,53 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (max-width:600px) {
+    body{
+
+    background-size: cover;
+    background-position: center;
+    }
+    
+}
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
+.titulo{
+    width: 100%;
+}
 
 h1{
-    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
     color: rgb(3, 19, 53);
     margin: 4% 0 0 0;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    width: 100%;
 }
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        
 
+    }
+    
+}
 .container{
     background-color: rgba(171, 184, 224, 0.788);
     width: 30rem;
     border-radius: 20px;
-    
-    
-    
-    
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 20rem;
+    }
     
 }
 
@@ -49,12 +73,19 @@ h1{
     color: rgba(92, 91, 91, 0.753);
 }
 
+.link-footer:hover{
+    color: tomato;
+}
 
 .link{
     font-size: 1.5rem;
     transition: all 0.2s;
+    color: gray;
 }
 
 .link:hover{
     transform: scale(1.1);
+    color: tomato;
+    
 }
+
