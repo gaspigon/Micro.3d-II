@@ -91,7 +91,7 @@
 .linea-uno{
     width: 24em;
     margin: 3% auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgb(245, 245, 245);
     text-align: center;
     font-family: $font-fam; 
     @include fontsize(44px);
@@ -116,7 +116,7 @@
 @keyframes maquina {
     from{
         width: 0;
-        border-right-color: rgba(255,255,255,.75);
+        border-right-color: rgb(245, 245, 245);
     }
     to{
         width: 24em;
