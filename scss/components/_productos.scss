@@ -3,10 +3,16 @@
 
 .productos{
 
+
     .box-producto{
         box-shadow: 0 0 5px 0 rgba(0,0,0,.55);
         padding-bottom: 1rem;
         margin-top: 2rem;
+        @media screen and (max-width:600px) {
+            margin-right: 1rem;
+            
+        }
+
 
             .img-prod{
                 width: 100% ;
