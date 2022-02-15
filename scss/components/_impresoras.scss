@@ -1,8 +1,66 @@
-.grid-impresoras{
-  
+.impresoras{
+    height: 30rem;
+    margin-top: 4rem;
+   
 
+    .box-impresora{
+        border-radius: 6px;
+        height: fit-content;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.55);
+
+            .contenedor{
+                width: 100%;
+                height: fit-content;
+
+                    figure{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        &:hover{
+                            .capa{
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+
+                        .img-impresoras{
+                            width: 100%;
+                            
+
+                        }
+                            .capa{
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(128, 159, 165, 0.9);
+                                text-align: center;
+                                opacity: 0;
+                                visibility: hidden;
+
+                            }
+                    }
+            }
+
+
+                .datos{
+                    font-weight: bolder;
+                    list-style: none;
+                    text-align: start;
+                    
+                    .green{
+                        color: rgba(3, 139, 3, 0.685);
+                        font-weight: bolder;
+                    }
+                        .red{
+                            color: red;
+                            text-decoration: line-through;
+                        }
+                }
+            
+    }
 }
-
 
 
 
